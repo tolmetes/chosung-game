@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>초성 클락 - 음성 스파이크</title>
+    <style>body{color:#eee;background:#111;margin:0;padding:16px;font-family:system-ui,-apple-system,Pretendard,sans-serif}h1{margin:0 0 12px;font-size:18px}label{margin-bottom:8px;font-size:16px;display:block}input{box-sizing:border-box;width:100%;margin-bottom:12px;padding:8px;font-size:20px}.buttons{flex-direction:column;gap:8px;margin-bottom:16px;display:flex}button{color:#eee;background:#222;border:1px solid #555;border-radius:8px;min-height:44px;padding:10px;font-size:18px}button:active{background:#333}#status{margin-bottom:8px;font-size:16px}pre{white-space:pre-wrap;word-break:break-word;color:#9f9;background:#000;border-radius:8px;max-height:60vh;padding:8px;font-size:13px;overflow-y:auto}</style>
+    <script type="module" crossorigin src="/chosung-game/assets/spike-CyUrJ4nS.js"></script>
+    <link rel="modulepreload" crossorigin href="/chosung-game/assets/speech-CWNUC6ez.js">
+  </head>
+  <body>
+    <h1>초성 클락 - 음성 인식 스파이크</h1>
+    <label for="chosung">초성</label>
+    <input id="chosung" type="text" value="ㄱㅅ" />
+    <div id="status">status: -</div>
+    <div class="buttons">
+      <button id="start">시작</button>
+      <button id="next-turn">턴 넘기기</button>
+      <button id="skip">마이크 없이 시작</button>
+      <button id="retry">다시 시도</button>
+      <button id="stop">중지</button>
+      <button id="lock-test">10초 후 잠금 테스트</button>
+      <button id="copy-log">로그 복사</button>
+    </div>
+    <pre id="log"></pre>
+  </body>
+</html>
